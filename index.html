@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neha Mariya Benny – Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF3E8; --surface:#F8FBF4; --ink:#15261D; --muted:#4F6357; --palm:#1F5139; --leaf:#3E8E5A; --nut:#D9B93A; --line:#C5D4BF;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif; --body:"Newsreader",Georgia,serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1B15;--surface:#16271E;--ink:#E6EFE2;--muted:#9DB3A5;--palm:#8FD0A5;--leaf:#5DAF7B;--nut:#E3C65A;--line:#2A4034;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1B15;--surface:#16271E;--ink:#E6EFE2;--muted:#9DB3A5;--palm:#8FD0A5;--leaf:#5DAF7B;--nut:#E3C65A;--line:#2A4034;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.65 var(--body)}
+a{color:var(--palm)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--nut);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:22px 0;font:500 16px var(--head)}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:40px 0 72px}
+h1{font:800 clamp(52px,9vw,112px)/.92 var(--head);letter-spacing:-.03em;margin:0 0 24px;color:var(--palm)}
+.lead{max-width:34em;font-size:22px;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font:500 17px var(--head);padding:13px 22px;border-radius:999px;text-decoration:none;border:2px solid var(--palm);color:var(--palm)}
+.btn.fill{background:var(--palm);color:var(--bg)}
+.frond{width:100%;height:auto;max-height:440px}
+.frond path{fill:none;stroke:var(--leaf);stroke-linecap:round}
+.frond .stem{stroke:var(--palm);stroke-width:5}
+.frond .nut{fill:var(--nut);stroke:none}
+.frond .l{stroke-width:3.5;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(30px,4vw,44px)/1.1 var(--head);letter-spacing:-.02em;margin:0 0 28px}
+.projects{display:grid;gap:28px}
+.proj{background:var(--surface);border-radius:18px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.proj h3{font:800 28px/1.15 var(--head);margin:0 0 8px;color:var(--palm)}
+.proj p{margin:0 0 12px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:0;align-content:flex-start}
+.tags li{font:500 15px var(--head);padding:5px 13px;border-radius:999px;border:1.5px solid var(--leaf);color:var(--ink)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px 32px}
+.skills h3,.tl h3{font:800 18px var(--head);margin:0 0 6px;color:var(--palm)}
+.skills p{margin:0;color:var(--muted)}
+.tl{display:grid;gap:26px;border-left:3px solid var(--leaf);padding-left:26px}
+.tl article{position:relative}
+.tl article::before{content:"";position:absolute;left:-35px;top:9px;width:13px;height:13px;border-radius:50%;background:var(--nut);border:3px solid var(--bg)}
+.tl p{margin:0;color:var(--muted)}
+.tl .when{font:500 15px var(--head);color:var(--leaf)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact a.mail{font:800 clamp(24px,4.5vw,46px)/1.2 var(--head);word-break:break-all;letter-spacing:-.02em}
+footer{padding:32px 0 48px;color:var(--muted);font-size:16px}
+@media(max-width:760px){.hero,.proj,.two{grid-template-columns:1fr}.frond{max-height:280px;order:-1}body{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.frond .l{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+  <div>
+    <h1>Neha Mariya Benny</h1>
+    <p class="lead">I’m a Computer Science graduate from Kannur, Kerala. I build Python and Flask web apps, with a growing focus on machine learning. I’m looking for an entry-level developer role.</p>
+    <div class="btns"><a class="btn fill" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+  </div>
+  <svg class="frond" viewBox="0 0 400 440" role="img" aria-label="Drawing of a coconut palm frond with two coconuts" id="frond">
+    <path class="stem" d="M60 430 C70 300 130 160 340 40"/>
+    <circle class="nut" cx="82" cy="372" r="17"/><circle class="nut" cx="104" cy="388" r="15"/>
+  </svg>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <article class="proj">
+      <div>
+        <h3>Coconut Leaf Disease Identification System</h3>
+        <p>An image-based system that identifies common coconut leaf diseases using deep learning and image processing.</p>
+        <p>I contributed to the web application that shows the result and suggests treatments.</p>
+      </div>
+      <ul class="tags" aria-label="Technologies"><li>Python</li><li>TensorFlow</li><li>OpenCV</li><li>Flask</li><li>HTML</li><li>CSS</li></ul>
+    </article>
+    <article class="proj">
+      <div>
+        <h3>Courier Route Optimization Web App</h3>
+        <p>A web app that plans courier routes by weighing weather, accidents, terrain, vehicle type and carbon emissions.</p>
+        <p>It combines machine learning with map visualization to show the chosen route.</p>
+      </div>
+      <ul class="tags" aria-label="Technologies"><li>Python</li><li>Flask</li><li>MySQL</li><li>Machine Learning</li><li>Leaflet</li><li>OpenStreetMap</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Languages</h3><p>Python, C, SQL</p></div>
+    <div><h3>Web</h3><p>Flask, HTML, CSS</p></div>
+    <div><h3>Data</h3><p>MySQL</p></div>
+    <div><h3>AI and ML</h3><p>Basic machine learning, TensorFlow, OpenCV</p></div>
+    <div><h3>Core concepts</h3><p>Data structures, algorithms, OOP</p></div>
+    <div><h3>Tools</h3><p>VS Code, Google Colab</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="tl">
+    <article><span class="when">July 2026</span><h3>Python Artificial Intelligence Intern, OpsCloud Technologies</h3><p>Practical exposure to Python programming and core AI concepts.</p></article>
+    <article><span class="when">Dec 2025 – Jan 2026</span><h3>Python Full Stack Intern, Arcite Project Management Consultancy</h3><p>Hands-on work with Python full-stack development and web application concepts.</p></article>
+    <article><span class="when">Dec 2025</span><h3>Python Flask Intern, Crudops Pvt. Ltd.</h3><p>Training in Python, Flask and the fundamentals of building web applications.</p></article>
+    <article><span class="when">2023</span><h3>Robotics internship and IoT workshop</h3><p>A 5-day robotics internship at Nyeste Venture Technologies and a 5-day Internet of Things workshop at Crinnolabs.</p></article>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="two">
+    <div><h3 style="font:800 18px var(--head);margin:0 0 4px;color:var(--palm)">B.Tech, Computer Science and Engineering</h3><p style="margin:0;color:var(--muted)">Vimal Jyothi Engineering College, Kannur<br>2022 – 2026 · CGPA 7.11</p></div>
+    <div><h3 style="font:800 18px var(--head);margin:0 0 4px;color:var(--palm)">Languages and working style</h3><p style="margin:0;color:var(--muted)">English and Malayalam. I work well in teams, manage my time, and enjoy learning new tools.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let’s talk</h2>
+  <p>I’m open to entry-level developer roles. You can reach me by email or phone.</p>
+  <p><a class="mail" href="mailto:123nehamariya345@gmail.com">123nehamariya345@gmail.com</a></p>
+  <p><a href="tel:+918075081949" style="font:800 clamp(22px,4vw,34px)/1.2 var(--head);text-decoration:none">+91 80750 81949</a></p>
+  <p><a href="https://linkedin.com/in/neha-mariya-benny" rel="noopener">LinkedIn profile</a></p>
+</section>
+<footer>© 2026 Neha Mariya Benny</footer>
+</div>
+<script>
+(function(){
+  var svg=document.getElementById('frond'),ns='http://www.w3.org/2000/svg';
+  // Quadratic-like cubic stem: P0(60,430) P1(70,300) P2(130,160) P3(340,40)
+  function pt(t){var u=1-t,x=u*u*u*60+3*u*u*t*70+3*u*t*t*130+t*t*t*340,y=u*u*u*430+3*u*u*t*300+3*u*t*t*160+t*t*t*40;
+    var dx=3*u*u*(70-60)+6*u*t*(130-70)+3*t*t*(340-130),dy=3*u*u*(300-430)+6*u*t*(160-300)+3*t*t*(40-160);
+    var m=Math.hypot(dx,dy);return{x:x,y:y,nx:-dy/m,ny:dx/m}}
+  var n=15;
+  for(var i=0;i<n;i++){
+    var t=.28+.7*i/(n-1),p=pt(t),len=95*(1-t*.75)+18;
+    [-1,1].forEach(function(s){
+      var ex=p.x+s*p.nx*len+ (s>0?18:-6), ey=p.y+s*p.ny*len+34;
+      var cx=p.x+s*p.nx*len*.5, cy=p.y+s*p.ny*len*.5-18;
+      var path=document.createElementNS(ns,'path');
+      path.setAttribute('d','M'+p.x.toFixed(1)+' '+p.y.toFixed(1)+' Q'+cx.toFixed(1)+' '+cy.toFixed(1)+' '+ex.toFixed(1)+' '+ey.toFixed(1));
+      path.setAttribute('class','l');path.setAttribute('pathLength','1');
+      path.style.animationDelay=(i*.09)+'s';
+      svg.insertBefore(path,svg.querySelector('.nut'));
+    });
+  }
+})();
+</script>
+</body>
+</html>
